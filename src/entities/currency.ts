@@ -16,7 +16,7 @@ export class Currency {
   /**
    * The only instance of the base class `Currency`.
    */
-  public static readonly ETHER: Currency = new Currency(18, 'BNB', 'BNB')
+  public static readonly ETHER: Currency = new Currency(18, 'ETH', 'ETH')
 
   /**
    * Constructs an instance of the base class `Currency`. The only instance of the base class `Currency` is `Currency.ETHER`.
@@ -25,7 +25,7 @@ export class Currency {
    * @param name of the currency
    */
   protected constructor(decimals: number, symbol?: string, name?: string) {
-    validateSolidityTypeInstance(JSBI.BigInt(decimals), SolidityType.uint8)
+    validateSolidityTypeInstance(JSBI.BigInt(decimals), SolidityType.uint256)
 
     this.decimals = decimals
     this.symbol = symbol

@@ -76,7 +76,23 @@ export const WETH = {
   ),
   [ChainId.TESTNET]: new Token(
     ChainId.TESTNET,
-    '0xaE8E19eFB41e7b96815649A6a60785e1fbA84C1e',
+    '0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd',
+    18,
+    'WBNB',
+    'Wrapped BNB',
+    'https://www.binance.org'
+  ),
+  [ChainId.SEPOLIA]: new Token(
+    ChainId.SEPOLIA,
+    '0xf559FCb69Ea0b78D21b7C93eF45f35cd2fA19692',
+    11155111,
+    'WETH',
+    'Wrapped ETH',
+    'https://www.binance.org'
+  ),
+  [ChainId.ETH]: new Token(
+    ChainId.TESTNET,
+    '0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd',
     18,
     'WBNB',
     'Wrapped BNB',
